@@ -1,0 +1,61 @@
+.header {
+  &-factories {
+    min-height: auto;
+    background-image: url(../images/factories-header-bg.png);
+    &__title {
+      padding: 75px 0 70px 0;
+      margin-bottom: 0;
+    }
+    &__inner{
+      display: block;
+    }
+  }
+}
+.info {
+  padding: 100px 0 50px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 630px;
+    &--box {
+      position: relative;
+      margin-right: 15px;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 80px;
+        height: 7px;
+        background-color: #00866b;
+        bottom: 0;
+      }
+    }
+  }
+  &__title {
+    font-size: 30px;
+    font-family: $Bold;
+  }
+  &__text {
+    line-height: 25px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+.series {
+  background-color: #f7f7f7;
+  padding: 55px 0 70px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__items {
+    width: 49%;
+  }
+  &__item {
+    width: 100%;
+    margin-bottom: 25px;
+    overflow: hidden;
+  }
+}

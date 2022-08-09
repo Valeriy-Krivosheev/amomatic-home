@@ -1,0 +1,106 @@
+.image-slider,
+.slider-modules,
+.slider-news,
+.slider-upgrade,
+.slider-moderns {
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+}
+.slider-factories {
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 30px;
+  background-color: #00866b;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.swiper-button-disabled {
+  background-color: transparent;
+  opacity: 1 !important;
+  border: 1px solid;
+}
+.swiper-button-next::after {
+  font-size: 20px;
+}
+.swiper-button-prev::after {
+  font-size: 20px;
+}
+.fraction-1,
+.swiper-pagination-current {
+  font-size: 100px;
+  font-family: $Bold;
+}
+.fraction-2,
+.swiper-pagination-total {
+  font-size: 30px;
+  position: absolute;
+}
+.swiper-pagination-total {
+  display: inline-block;
+  margin-left: 32px;
+}
+.header-pagination {
+  height: 50px;
+  text-align: right;
+  position: absolute;
+  bottom: 17%;
+  margin-right: 50px;
+  padding-right: 150px;
+}
+.modules-button-prev,
+.modules-button-next,
+.factories-button-next,
+.factories-button-prev,
+.news-button-prev,
+.news-button-next,
+.modern-button-next,
+.modern-button-prev {
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 45px;
+  width: 56px;
+  background-color: #00866b;
+  cursor: pointer;
+  border: none;
+}
+.modules-arrows,
+.modern-arrows {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.modules-button-prev,
+.factories-button-prev,
+.news-button-prev,
+.modern-button-prev {
+  background-image: url(../images/arrowPrev.png);
+  margin-right: 15px;
+}
+.modules-button-next,
+.factories-button-next,
+.news-button-next,
+.modern-button-next {
+  background-image: url(../images/arrowNext.png);
+}
+.factories-pagination {
+  bottom: -25%;
+  top: auto !important;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: #00866b;
+}
+.phone {
+  display: none;
+}

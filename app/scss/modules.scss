@@ -1,0 +1,26 @@
+.header {
+  &-modules {
+    min-height: auto;
+    background-image: url(../images/modules-header-bg.png);
+  }
+}
+.equipment {
+  &__title {
+    max-width: 500px;
+    font-size: 50px;
+  }
+}
+.modules {
+  &-hidden {
+    display: none;
+  }
+  &__equipment {
+    background-color: #f7f7f7;
+    &--content {
+      background-color: #fff;
+    }
+  }
+  &-pagination {
+    bottom: -10%;
+  }
+}

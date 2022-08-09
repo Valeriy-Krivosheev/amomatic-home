@@ -1,0 +1,101 @@
+.header {
+  &-upgrade {
+    min-height: auto;
+    background-image: url(../images/upgrade-header-bg.png);
+    &__inner {
+      display: block;
+    }
+  }
+}
+.modern {
+  padding: 60px 0 220px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__top {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  &__item {
+    width: 45%;
+
+    &--slider {
+      width: 52%;
+    }
+    &--content {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 80px;
+        height: 7px;
+        background-color: #00866b;
+        bottom: 0;
+      }
+    }
+  }
+  &__title {
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-family: AcherusFeral-Bold;
+  }
+  &__text {
+    margin-bottom: 35px;
+    @extend %text-wrap5;
+    -webkit-line-clamp: 8;
+    line-height: 25px;
+    &:first-child {
+      padding-top: 30px;
+    }
+  }
+  &__image {
+    display: flex;
+    justify-content: right;
+  }
+  &__img {
+    height: 290px;
+    width: 100%;
+  }
+}
+.cards {
+  background-color: #f7f7f7;
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 30px;
+    transform: translateY(-30%);
+  }
+  &__item {
+    background-color: #ffffff;
+  }
+  &__content {
+    min-height: 123px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 10px;
+      background-image: url(../images/upgrade-arrow.png);
+      right: 25px;
+      bottom: 25px;
+    }
+  }
+  &__title {
+    font-family: "AcherusFeral-Bold";
+    font-size: 18px;
+    padding: 0 20px 0 20px;
+    text-transform: uppercase;
+    @extend %text-wrap5;
+    -webkit-line-clamp: 3;
+    color: #484d58;
+  }
+  &__img {
+    height: 260px;
+    width: 100%;
+  }
+}

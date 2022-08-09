@@ -1,0 +1,51 @@
+.header {
+	&-404 {
+		min-height: auto;
+		background-image: url(../images/404-header.png);
+	}
+}
+
+.error {
+	background-color: #ffffff;
+	padding: 100px 0;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__items {
+		width: 50%;
+
+		&--info {
+			width: 40%;
+			text-align: center;
+		}
+	}
+
+	&__title {
+		font-size: 120px;
+		font-family: "AcherusFeral-Bold";
+		display: block;
+	}
+
+	&__subtitle {
+		font-size: 30px;
+		font-family: "AcherusFeral-Bold";
+		display: block;
+		margin-bottom: 50px;
+	}
+
+	&__info {
+		font-weight: 400;
+		margin-bottom: 50px;
+	}
+
+	&__btn {
+		border: transparent;
+		color: #ffffff;
+		background-color: #00866b;
+		cursor: pointer;
+		padding: 20px 70px;
+	}
+}

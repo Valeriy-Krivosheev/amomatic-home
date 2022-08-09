@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amomatic | IT решения</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <svg display="none" xmlns="http://www.w3.org/2000/svg">
+    
+      <symbol id="phone" viewBox="0 0 20 20">
+        <path
+          d="M13.0406 16.5063C7.38544 15.0666 2.93352 10.6147 1.49383 4.95952C0.948815 2.81867 2.79098 0.999999 5.00012 0.999999L6.00012 1C6.55241 1 6.99486 1.44883 7.04934 1.99842C7.14138 2.92696 7.36044 3.81815 7.68889 4.65437L6.16961 6.17366C7.35213 8.6447 9.35542 10.648 11.8265 11.8305L13.3457 10.3112C14.182 10.6397 15.0732 10.8587 16.0017 10.9508C16.5513 11.0053 17.0001 11.4477 17.0001 12L17.0001 13C17.0001 15.2091 15.1815 17.0513 13.0406 16.5063Z"
+          stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" fill="#ffffff" />
+      </symbol>
+    
+      <symbol id="find" viewBox="0 0 20 20">
+        <path
+          d="M11.15 11.06L14.075 14.025L16 15.95M11.1931 2.58187C13.525 4.91369 13.525 8.69432 11.1931 11.0261C8.86132 13.358 5.08069 13.358 2.74887 11.0261C0.417045 8.69432 0.417045 4.91369 2.74887 2.58187C5.08069 0.250053 8.86132 0.250053 11.1931 2.58187Z"
+          stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="transparent" />
+      </symbol>
+    
+      <symbol id="menu" viewBox="0 0 20 20">
+        <path d="M3.5 4.99973H14.5027M5.5 9.0014H14.5027M1.49731 0.998047H14.5024" stroke="#ffffff" stroke-width="1.5"
+          stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+    
+      <symbol id="close" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+          d="M9.788,7.985 L15.449,13.645 C15.884,14.80 15.884,14.786 15.449,15.221 C15.14,15.656 14.308,15.656 13.873,15.221 L8.212,9.560 L2.552,15.221 C2.117,15.656 1.411,15.656 0.976,15.221 C0.541,14.786 0.541,14.80 0.976,13.645 L6.637,7.985 L0.976,2.324 C0.541,1.889 0.541,1.183 0.976,0.748 C1.411,0.313 2.117,0.313 2.552,0.748 L8.212,6.409 L13.873,0.748 C14.308,0.313 15.14,0.313 15.449,0.748 C15.884,1.183 15.884,1.889 15.449,2.324 L9.788,7.985 Z" />
+      </symbol>
+    </svg>
+    <!-- POPUP -->
+<div class="popup__bg"> 
+  <form class="popup">
+    <h3 class="connect__title popup__title">Обратный звонок</h3>
+    <div class="form__inner popup__inner">
+      <div class="form__item form-inputs">
+        <div class="form__items popup__items">
+          <div class="form__box">
+            <label for="name">
+              <input class="form__input" type="text" id="name" placeholder="Имя*" required>
+            </label>
+            <label for="tel">
+              <input class="form__input" type="tel" id="tel" placeholder="Телефон*" required>
+            </label>
+          </div>
+          <div class="form__box">
+            <label for="email">
+              <input class="form__input popup__input--mail" type="email" placeholder="E-mail" id="email">
+            </label>
+          </div>
+          <div class="form__box">
+            <label for="message">
+              <input class="form__input popup__message" type="text" id="message" placeholder="Сообщение">
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form__item form-btn popup__button">
+        <button class="form__btn popup__btn" type="submit">Отправить</button>
+      </div>
+    </div>
+  </form>
+</div>  
+
+<!-- POPUP -->
+    <header class="header header-techno">
+      <nav class="nav">
+        <div class="container">
+          <div class="nav__inner">
+            <a href="index.html" class="nav__logo">
+              <img src="./images/logo.png" alt="логотип">
+            </a>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">О компании</a>
+              </li>
+              <li class="nav__item">
+                <a href="factories.html" class="nav__link">Заводы</a>
+              </li>
+              <li class="nav__item">
+                <a href="modules.html" class="nav__link">Оборудование</a>
+              </li>
+              <li class="nav__item">
+                <a href="upgrade.html" class="nav__link">Модернизация АБЗ</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Запчасти и сервис</a>
+              </li>
+              <li class="nav__item">
+                <a href="news.html" class="nav__link">Новости</a>
+              </li>
+              <li class="nav__item">
+                <a href="contacts.html" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+            <div class="burger">
+              <div class="burger__item">
+                <button class="burger__close">
+                  <svg width="25" height="25">
+                    <use xlink:href="#close"></use>
+                  </svg>
+                </button>
+                <div class="burger__phone">
+                  8-800-700-2122
+                  <span>Информационный центр</span>
+                </div>
+                <div class="burger__phone">
+                  + 7(495)212-2122
+                  <span>Офис продаж</span>
+                </div>
+                <u class="burger__mail">info@e-np.ru</u>
+              </div>
+              <div class="burger__items">
+                <div class="burger__name">
+                  <p class="burger__title">Компания</p>
+                </div>
+                <div class="burger__content">
+                  <a href="#" class="burger__link">Сертификаты</a>
+                  <a href="#" class="burger__link">О нас</a>
+                  <a href="#" class="burger__link">Другое</a>
+                </div>
+              </div>
+              <div class="burger__items">
+                <div class="burger__name">
+                  <p class="burger__title">Заводы</p>
+                </div>
+                <div class="burger__content">
+                  <a href="#" class="burger__link">Контейнерные серии см</a>
+                  <a href="#" class="burger__link">Полумобильные серии м</a>
+                  <a href="#" class="burger__link">Мобильные серии см</a>
+                  <a href="#" class="burger__link">Башенные серии н</a>
+                </div>
+              </div>
+              <div class="burger__items">
+                <div class="burger__name">
+                  <p class="burger__title">Оборудование</p>
+                </div>
+                <div class="burger__content">
+                  <a href="#" class="burger__link">Горелки</a>
+                  <a href="#" class="burger__link">Сушильные барабаны</a>
+                  <a href="#" class="burger__link">Смесительные башни</a>
+                  <a href="#" class="burger__link">Бункеры накопители</a>
+                  <a href="#" class="burger__link">Ресайклинг асфальта</a>
+                </div>
+              </div>
+              <button class="nav__btn burger__btn open">
+                Обратная связь
+              </button>
+            </div>
+            <button class="nav-menu">
+              <svg width="35" height="30">
+                <use xlink:href="#menu"></use>
+              </svg>
+            </button>
+            <button class="nav__btn open">
+              Обратный звонок
+            </button>
+            <button class="nav__btn-media open">
+              <svg width="20" height="20">
+                <use xlink:href="#phone"></use>
+              </svg>
+            </button>
+            <a href="search.html" class="nav__search">
+              <svg width="20" height="20">
+                <use xlink:href="#find"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="header__content">
+        <div class="container">
+          <div class="header__inner header-upgrade__inner">
+            <div class="container__small">
+              <div class="header-techno__block">
+                <h1 class="header__title header-techno__title">IT решения</h1>
+                <ul class="header-techno__buttons">
+                  <li href="amocontrol" class="header-techno__btn">Amocontrol</li>
+                  <li href="amoweb" class="header-techno__btn">Amoweb</li>
+                  <li href="amotrack" class="header-techno__btn">Amotrack</li>
+                  <li href="amocems" class="header-techno__btn">Amocems</li>
+                  <li href="amobio" class="header-techno__btn">Amobio</li>
+                </ul>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+<main class="main">
+  <section id="amocontrol" class="amocontrol">
+    <div class="container__small">
+      <div class="amocontrol__inner">
+        <div class="amocontrol__item amocontrol__item--content">
+          <h3 class="amocontrol__title">Amocontrol</h3>
+          <h4 class="amocontrol__subtitle">Система управления асфальтовым заводом – AmoControl фирмы
+            Amomatic Oy</h4>
+        </div>
+        <div class="amocontrol__item amocontrol__item--pic">
+          <div class="amocontrol__image">
+            <img src="./images/amocontrol.png" alt="Система управления" class="amocontrol__img">
+          </div>
+        </div>
+      </div>
+      <div class="amocontrol__info">
+        <p class="amocontrol__text">
+          На АБЗ Амоматик внедрена интегрированная система управления AmoControl промышленного назначения.
+          Граффитиобразная
+          система управления AmoControl третьего поколения способствует обеспечению современного производства. Гибкая
+          система,
+          приспособленная к многодискретным процессам основана на программе Simatic PCS7, являясь футуристической
+          системой
+          управления процессами, и компонентом тотально-интегрированной автоматики.
+          Использование коммерческих продукции и инструментов программного обеспечения, например Windows XP Microsoft,
+          делает
+          прикладное матобеспечение полностью прозрачным и доступным. Открытый подход определяет свободное расширение и
+          усовершенствование в дальнейшем.
+        </p>
+        <p class="amocontrol__text">
+          Компьютерная графика легко понятна, что гарантирует точный контроль комплексной эксплуатации завода и короткий
+          период
+          обучения. Визуальные эффекты легко воспринимаемы (с изменением текстов и цветов, с миганием, с движениями, с
+          определением размеров, и с заполнением жидкостью). Используя режим "вытаскивания", индивидуальные компоненты
+          могут быть
+          отражены на экране и отрегулированы без риска непреднамеренного нарушения режима работы.
+          На экране отражается процесс работы. Обслуживающий персонал может наблюдать за процессом, перерабатывать
+          рецепты или
+          последовательности порций и изменять параметры.
+        </p>
+        <p class="amocontrol__text">
+          Все режимы работы, требуемые для выполнения работ по управлению и автоматике, осушествляются системой
+          AmoControl.
+          Обучение, предоставляемое фирмой Amomatic Oy, содействует работе с системой управления процессами с
+          максимальной
+          эффективностью. Интегрированная система постоянно проводит самотестирование и самодиагностику для обеспечения
+          необходимой безопасности. Наш высочайший приоритет - это бесперебойный процесс.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="amoweb" class="amoweb">
+    <div class="container__small">
+      <div class="amoweb__inner">
+        <div class="amoweb__items">
+          <div class="amoweb__item">
+            <div class="amoweb__image">
+              <img src="./images/amoweb.png" alt="Статистика" class="amoweb__img">
+            </div>
+          </div>
+          <div class="amoweb__item">
+            <h3 class="amoweb__title">Amoweb</h3>
+            <p class="amoweb__text">
+              В настоящее время с системой AmoControl Web Вы можете контролировать процесс через Интернет и Интранет.
+              AmoControl Web
+              предоставляет доступ к вэб-серверу с любым персональным компьютером, использующим интернет-браузер.
+            </p>
+            <p class="amoweb__text">
+              Это позволяет контролировать процессы и, при необходимости непосредственно вмешиваться с помощью
+              дистанционного
+              управления. Пароли пользователя, файерволы и индивидуальные прикладные концепции защищают систему от
+              несанкционированных
+              вмешательств. AmoControl Asset Management включает в себя эксплуатацию и управление заводом, с целью
+              поддерживать и
+              увеличивать эффективность завода путем диагностики ошибок и устранения их. Это содействует обеспечению
+              профилактики и
+              сервиса.
+            </p>
+            <p class="amoweb__text">
+              Новейшее приложение Amomatic перенесёт мониторинг Вашего асфальтового завода на «облака». AmoWeb позволяет
+              производителю
+              наблюдать за производством везде, всегда и в реальном времени. При использовании AmoWeb, необходимые
+              производственные
+              сводки возможно легко проверить без нужды связываться с оператором завода. Это уменьшает необходимость
+              тратить время на
+              телефон или электронную почту. Т.к. информация базируется «на облаках», вам не нужно беспокоиться о её
+              хранении.
+
+            </p>
+            <p class="amoweb__text">
+              Функции AmoWeb могут быть полностью адаптированы к Вашим потребностям. Например, данные систем
+               AmoCEMS и AmoTrack могут
+              быть взаимно интегрированы. Заявки на запчасти могут автоматически привязываться к производственной
+              статистике.
+            </p>
+          </div>
+        </div>
+        <h3 class="amoweb__title">
+          Основные преимущества
+        </h3>
+        <div class="property__items">
+          <ul class="property__list">
+            <li class="property__item">
+              Безопасный мониторинг производства и хранение данных
+              «на облаках»
+            </li>
+            <li class="property__item">
+              Производственная информация в реальном времени
+            </li>
+            <li class="property__item">
+              Скорейшее реагирование на возможные сбои в производстве
+            </li>
+            <li class="property__item">
+              Инструкции и базы данных доступные онлайн
+            </li>
+          </ul>
+          <ul class="property__list">
+            <li class="property__item">
+              Сервис и запчасти доступные через систему
+            </li>
+            <li class="property__item">
+              Сэкономленное время с отлаженной коммуникацией
+            </li>
+            <li class="property__item">
+              Доступные сетевые и Android приложения
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="amotrack" class="amotrack">
+    <div class="container__small">
+      <div class="amotrack__inner">
+        <div class="amotrack__items">
+          <div class="amotrack__item">
+            <h3 class="amotrack__title">Amotrack</h3>
+            <p class="amotrack__text">
+              Система отслеживания AmoTrack асфальтовой смеси предлагает выгоду и для персонала асфальтового завода и
+              для
+              персонала
+              укладки. Цифровая система позволяет производителям отслеживать процесс укладки в режиме реального времени.
+              Он также
+              позволяет им контролировать состав асфальта.
+            </p>
+            <p class="amotrack__text">
+              Оператор завода видит незамедлительно когда замес был доставлен.  Он также получает комментарии от
+              персонала укладки
+              через приложение, снижая  потребность в лишних телефонных звонках. Детальная информация о процессе
+              загрузки может
+              извлекаться автоматически или вручную. Используя AmoTrack, персонал укладки снабжён связью в реальном
+              времени с
+              асфальтовым заводом.
+            </p>
+            <p class="amotrack__text">
+              Используя планшет, они могут видеть, где и когда произведена загрузка, а разгрузка требует лишь одного
+              нажатия
+              кнопки.
+              Персонал укладки может оставлять комментарии оператору асфальтового завода и пользоваться приложением
+              оффлайн.
+              AmoTrack
+              использует «облачный» сервис для хранения информации об уложенном асфальте. Например, можно отыскать
+              определённый
+              замес
+              по дате его отгрузки с завода. Это упрощает поиск соответствующих деталей, если в процессе укладке
+              произошло что-то
+              неожиданное.
+            </p>
+          </div>
+          <div class="amotrack__item">
+            <div class="amotrack__image">
+              <img src="./images/amotrack.png" alt="Amotrack" class="amotrack__img">
+            </div>
+          </div>
+        </div>
+        <h3 class="amotrack__title">Основные свойства и клиентские опции</h3>
+        <div class="property__items">
+          <ul class="property__list">
+            <li class="property__item">
+              Отслеживание погрузки и разгрузки в реальном времени на платформе GPS
+            </li>
+            <li class="property__item">
+              Лёгкость коммуникации между оператором завода и укладчиком
+            </li>
+            <li class="property__item">
+              Поиск и фильтрация по идентификационным номерам замеса и отгрузки
+            </li>
+          </ul>
+          <ul class="property__list">
+            <li class="property__item">
+              Понятный интерфейс для пользователя компьютера или планшета
+            </li>
+            <li class="property__item">
+              Возможность отслеживания остановки укладки (опционально)
+            </li>
+            <li class="property__item">
+              Инфракрасные термодатчики (опционально)
+            </li>
+            <li class="property__item">
+              Температурная графика уложенного асфальта (опционально)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="amocems" class="amocems">
+    <div class="container__small">
+      <div class="amocems__inner">
+        <div class="amocems__items">
+          <div class="amocems__item">
+            <div class="amocems__block">
+              <h2 class="amocems__title">Amocems</h2>
+              <p class="amocems__text">
+                Компактная Непрерывная Система Измерения Выбросов (Continuous Emission Measuring System) разработана
+                специально для нужд
+                мобильных и стационарных АБЗ.
+              </p>
+            </div>
+            <div class="amocems__block">
+              <h3 class="amocems__subtitle">Анализатор</h3>
+              <p class="amocems__info">
+                Автономный мультигазовый анализатор обеспечивает непрерывные измерения для 5-и газов в дополнение к
+                замерам кислорода
+                через парамагнитную пленку. Система использует технологию оптической фильтрации единичного
+                недисперсионного
+                инфракрасного пучка (NDIR).
+              </p>
+            </div>
+          </div>
+          <div class="amocems__item">
+            <div class="amocems__image">
+              <img src="./images/amocems.png" alt="Аппарат" class="amocems__img">
+            </div>
+          </div>
+        </div>
+        <div class="amocems__content">
+          <h3 class="amocems__title">Основные характеристики</h3>
+          <div class="property__items">
+            <ul class="property__list">
+              <li class="property__item">
+                Автоматические и непрерывные замеры влажности
+              </li>
+              <li class="property__item">
+                Встроенные интерактивные алгоритмы помех
+              </li>
+              <li class="property__item">
+                Прямые замеры NO2
+              </li>
+            </ul>
+            <ul class="property__list">
+              <li class="property__item">
+                Автоматическая система сигнализации и отключения
+              </li>
+              <li class="property__item">
+                Ethernet-передача данных для измеренных значений
+              </li>
+              <li class="property__item">
+                Удаленная настройка параметров и создание памяти событий
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="amocems__content">
+          <h3 class="amocems__subtitle">Блок подготовки (просушки) проб</h3>
+          <div class="property__items ">
+            <ul class="property__list">
+              <li class="property__item">
+                Доставка сухой и очищенной от посторонних частиц пробы
+                в анализатор. Максимальная скорость потока 250 л/час
+              </li>
+            </ul>
+            <ul class="property__list">
+              <li class="property__item">
+                Низкие требования по обслуживанию и защита для бесперебойной работы при мониторинге влажности и газового
+                потока
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="amocems__content">
+          <h3 class="amocems__subtitle">Канал</h3>
+          <div class="property__items ">
+            <ul class="property__list">
+              <li class="property__item">
+                Подогреваемый канал PTFE с полупроводниковым реле с программируемым терморегулятором и системой
+                сигнализации.
+                Гарантирует, что тестируемый образец находится в газообразном состоянии на момент взятия проб
+              </li>
+            </ul>
+            <ul class="property__list">
+              <li class="property__item">
+                Температурная шкала 0… 200 °C. Мощность 100 Вт/м
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="amocems__content">
+          <h3 class="amocems__subtitle">Зонд</h3>
+          <div class="property__items">
+            <ul class="property__list">
+              <li class="property__item">
+                Зонд длиной 1,3 м с металлокерамическим фильтром. Максимальная рабочая температура + 600 °C
+              </li>
+            </ul>
+            <ul class="property__list">
+              <li class="property__item">
+                DN65/PN6 фланцевое соединение
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="amocems__content">
+          <h3 class="amocems__subtitle">QAL1-одобренная система мониторинга:
+          </h3>
+          <div class="property__items ">
+            <ul class="property__list">
+              <li class="property__item">
+                Запатентованный электродинамический способ измерения, не требующий текущего обслуживания
+              </li>
+              <li class="property__item">
+                Сертифицированная шкала измерений 0…15 мг/м2, общая шкала 0…100 мг/м2
+              </li>
+            </ul>
+            <ul class="property__list">
+              <li class="property__item">
+                максимальная температура + 400 °C
+              </li>
+              <li class="property__item">
+                Соединение R1 ½”. Рекомендации к установке: фланец DN65/PN10
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="amobio" class="amobio">
+    <div class="container__small">
+      <div class="amobio__inner">
+        <div class="amobio__items">
+          <div class="amobio__item">
+            <div class="amobio__image">
+              <img src="./images/amobio.png" alt="фото" class="amobio__img">
+            </div>
+          </div>
+          <div class="amobio__item">
+            <h3 class="amobio__title">Amobio</h3>
+            <p class="amobio__text">
+              Amomatic приносит силу биотоплива на асфальтовые заводы. Наша экологически чистая и экономичная топливная
+              система
+              снижает углеродный фактор производства и предлагает множество других преимуществ для производителей.
+            </p>
+            <p class="amobio__text">
+              Решения Amomatic охватывают различные типы биотоплив, всегда с поправкой на местонахождение завода и
+              местные
+              предписания. Использование различных биотоплив способно снизить эмиссии CO2 на асфальтовом заводе более
+              чем на 90%. В
+              качестве возобновляемой альтернативы ископаемым топливам, они способны также снизить себестоимость и
+              степень ухода за
+              оборудованием. 
+            </p>
+            <p class="amobio__text">
+              Система AmoBio может быть легко встроена в существующий асфальтовый завод. Стоимость переустановки
+              невелика, а
+              возможности от перехода к использованию биотоплива существенны. Они позволят производителю асфальта, к
+              примеру, 
+              работать с местной пищевой отраслью, перерабатывая использованные там растительные масла.  
+            </p>
+          </div>
+        </div>
+        <h3 class="amobio__title">Выбор биологического топлива
+        </h3>
+        <div class="property__items">
+          <ul class="property__list">
+            <li class="property__item">
+              Растительные масла (бывшие в употреблении и свежие)
+            </li>
+            <li class="property__item">
+              Скипидар
+            </li>
+            <li class="property__item">
+              Животные жиры и масло, животного происхождения
+            </li>
+          </ul>
+          <ul class="property__list">
+            <li class="property__item">
+              Пиролизные масла
+            </li>
+            <li class="property__item">
+              Биодизель
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="connect connect-techno">
+    <div class="container__small">
+      <h3 class="connect__title">Написать нам</h3>
+      <form class="form">
+        <div class="form__inner">
+          <div class="form__item form-inputs">
+            <div class="form__items">
+              <div class="form__box">
+                <label for="name">
+                  <input class="form__input" type="text" id="name" placeholder="Имя*" required>
+                </label>
+                <label for="tel">
+                  <input class="form__input" type="tel" id="tel" placeholder="Телефон*" required>
+                </label>
+                <label for="email">
+                  <input class="form__input" type="email" placeholder="E-mail">
+                </label>
+              </div>
+              <div class="form__box">
+                <label for="message">
+                  <input class="form__input" type="text" id="message" placeholder="Сообщение">
+                </label>
+                <label for="file" id="file-label">
+                  <input class="form__input" type="file" id="file">
+                  <span class="form__input-img">
+                    <img src="./images/form-file.png" alt="Прикрепить">
+                  </span>
+                  <span class="form__input-text">Прикрепите файл</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form__item form-btn">
+            <button class="form__btn" type="submit">Отправить</button>
+            <span>
+              Нажимая кнопку отправить, Вы соглашаетесь на<u>
+                обработку персональных данных
+              </u>
+            </span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+    <div class="container__small">
+      <div class="footer-top">
+        <div class="footer-top__box">
+          <div class="footer-top__item">
+            <a href="#" class="footer-top__logo">
+              <img src="./images/logo.png" alt="логотип">
+            </a>
+            <div class="footer-top__phone">
+              8-800-700-2122
+              <span>Информационный центр</span>
+            </div>
+            <div class="footer-top__phone">
+              + 7 (495) 212-2122
+              <span>Офис продаж</span>
+            </div>
+            <u>
+              info@cominvest-akmt.ru
+            </u>
+          </div>
+          <div class="footer-top__item">
+            <h4 class="footer-top__title">компания</h4>
+            <ul class="footer-top__list">
+              <li class="footer-top__text">
+                <a href="#">О компании</a>
+              </li>
+              <li class="footer-top__text">
+                <a href="upgrade.html">Модернизация АБЗ</a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Запчасти и сервис
+                </a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Новости
+                </a>
+              </li>
+              <li class="footer-top__text">
+                <a href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-top__box">
+          <div class="footer-top__item">
+            <h4 class="footer-top__title">оборудование</h4>
+            <ul class="footer-top__list">
+              <li class="footer-top__text">
+                <a href="burners.html">Горелки</a>
+              </li>
+              <li class="footer-top__text">
+                <a href="drums.html">Сушильные барабаны
+                </a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Рукавные фильтры
+                </a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Питатели
+                </a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Смесительные башни</a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Бункера накопители
+                </a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Ресайклинг асфальта</a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Пенобитум</a>
+              </li>
+              <li class="footer-top__text">
+                <a href="techno.html">IT решения
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-top__item no-border">
+            <h4 class="footer-top__title">заводы</h4>
+            <ul class="footer-top__list footer-top__list--last">
+              <li class="footer-top__text">
+                <a href="#">Контейнерные</a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Полумобильные</a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Мобильные
+                </a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Стационарные
+                </a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Спецификация под заказ</a>
+              </li>
+            </ul>
+            <button class="footer-top__btn open">Обратная связь</button>
+          </div>
+        </div>
+  
+  
+  
+      </div>
+      <div class="footer-bottom">
+        <h6 class="footer-bottom__title">АО «Коминвест-АКМТ</h6>
+        <div class="footer-bottom__link">
+          <a href="#">Дизайн и разработка - агентство «Скилпоинт»</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script src="./js/techno/techno.js"></script>
+
+
+</body>
+
+</html>

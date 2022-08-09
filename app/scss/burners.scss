@@ -1,0 +1,119 @@
+.header {
+  &-burners {
+    min-height: auto;
+    background-image: url(../images/burners-header-bg.png);
+  }
+}
+.burners {
+  padding: 65px 0 55px;
+  &__title {
+    font-family: AcherusFeral-Bold;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+.service {
+  background-color: #f7f7f7;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 50%;
+  }
+  &__image {
+    max-width: 535px;
+    transform: translateY(60px);
+  }
+  &__img {
+    width: 100%;
+  }
+  &__item {
+    &:last-child {
+      padding: 130px 0 130px;
+    }
+  }
+  &__title {
+    font-family: AcherusFeral-Bold;
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    &:last-child {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        height: 7px;
+        width: 85px;
+        background-color: #00866b;
+        bottom: -51px;
+        left: 0;
+      }
+    }
+  }
+}
+.property {
+  padding: 140px 0 80px;
+  &__title {
+    font-family: AcherusFeral-Bold;
+    font-size: 50px;
+    margin-bottom: 60px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    flex-wrap: wrap;
+  }
+  &__list {
+    min-width: 49%;
+  }
+  &__item {
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-bottom: 25px;
+    margin-right: 35px;
+    max-width: 510px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 15px;
+      height: 17px;
+      background-color: #00866b;
+      left: -35px;
+      top: 5px;
+    }
+  }
+}
+.burners {
+  &-modules {
+    background-color: #f7f7f7;
+  }
+  &__content {
+    background-color: #ffffff;
+  }
+}
+.factory {
+  padding: 65px 0;
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 30px;
+  }
+
+  &-name {
+    background-color: #f7f7f7;
+  }
+}

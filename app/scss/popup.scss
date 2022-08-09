@@ -1,0 +1,114 @@
+.popup__bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.5s all;
+	z-index: 998;
+}
+
+.popup__bg.active {
+	opacity: 1;
+	pointer-events: all;
+	transition: 0.5s all;
+}
+
+.popup {
+	z-index: 999;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	background: #fff;
+	width: 50%;
+	max-width: 700px;
+	padding: 45px;
+	transition: 0.5s all;
+	text-align: center;
+
+	&__items {
+		margin-bottom: 45px;
+	}
+
+	&__input {
+		&--mail {
+			max-width: none;
+		}
+	}
+
+	&__inner {
+		display: block;
+	}
+
+	&__button {
+		max-width: none;
+	}
+
+	&__btn {
+		align-self: center;
+	}
+
+	&__message {
+		min-width: auto !important;
+		padding-bottom: 50px;
+	}
+}
+
+.popup.active {
+	transform: translate(-50%, -50%) scale(1);
+	transition: 0.5s all;
+}
+
+
+@media(max-width:768px) {
+	.popup {
+		padding: 20px;
+		width: 70%;
+
+		&__title {
+			font-size: 30px;
+			margin-bottom: 30px;
+		}
+
+		&__message {
+			margin-bottom: 0 !important;
+		}
+
+		&__btn {
+			padding: 20px 70px;
+		}
+	}
+}
+
+@media(max-width:468px) {
+	.popup {
+		width: 80%;
+
+		&__btn {
+			padding: 20px 60px;
+		}
+	}
+}
+
+@media(max-height:768px) {
+	.popup {
+		max-height: 600px;
+		padding: 15px 30px;
+		overflow: scroll;
+
+		&__title {
+			margin-bottom: 10px;
+
+		}
+	}
+}
+
+@media(max-height:420px) {
+	.popup {
+		max-height: 400px;
+	}
+}

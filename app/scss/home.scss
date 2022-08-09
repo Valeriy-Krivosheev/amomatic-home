@@ -1,0 +1,376 @@
+.modules {
+  padding: 80px 0 90px;
+
+  &__top {
+    margin-bottom: 65px;
+    position: relative;
+  }
+
+  &__title {
+    font-size: 50px;
+    font-family: $Bold;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__item {
+    width: 100%;
+
+    &:hover .modules__img {
+      transform: scale(1.2);
+    }
+  }
+
+  &__image {
+    max-height: 220px;
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+    transition: all 0.8s;
+    min-height: 215px;
+  }
+
+  &__content {
+    background-color: #f7f7f7;
+    padding-top: 30px;
+    height: 215px;
+    position: relative;
+  }
+
+  &__name {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    max-width: 80%;
+    overflow: hidden;
+    display: inline-block;
+    font-family: "AcherusFeral-Bold";
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: 0.7px;
+    max-width: 235px;
+    margin-left: 30px;
+    padding-right: 5px;
+    @extend %text-wrap5;
+  }
+
+  &__arrow {
+    position: absolute;
+    right: 10%;
+    bottom: 15%;
+  }
+}
+
+.factories {
+  background-color: #f6f6f6;
+
+  &__inner {
+    padding: 90px 0 180px;
+    background-image: url(../images/Factories-background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__item {
+    width: 100%;
+    display: inline-block;
+  }
+
+  &__image {
+    max-height: 278px;
+  }
+
+  &__img {
+    width: 100%;
+    min-height: 280px;
+  }
+
+  &__name {
+    max-height: 80px;
+    padding: 25px 0 25px 27px;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      transition: width 0.5s ease-in-out;
+      right: 0;
+      top: 0;
+      border-top: 79px solid #00866b;
+      border-right: 50px solid transparent;
+      height: 0;
+      width: 22%;
+      min-width: 100px;
+      transform: rotate(180deg);
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url(../images/factories-arrow.png);
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      right: 5%;
+      z-index: 10;
+    }
+  }
+
+  &__item:hover .factories__name::after {
+    width: 120%;
+    z-index: 1;
+    color: #ffffff;
+  }
+
+  &__item:hover .factories__subtitle {
+    color: #ffffff;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    font-family: $Bold;
+    text-transform: uppercase;
+    z-index: 5;
+    transition: color 0.5s;
+    color: #484d58;
+    max-width: 75%;
+    overflow: hidden;
+    @extend %text-wrap5;
+    -webkit-line-clamp: 1;
+  }
+}
+
+.about {
+  padding: 65px 0;
+  display: flex;
+
+  &__content {
+    display: flex;
+    flex: 0 0 100%;
+    align-items: center;
+  }
+
+  &__item {
+    width: 62%;
+    border: 1px solid #e6e6e6;
+    padding: 90px 50px 90px 90px;
+    position: relative;
+    z-index: 5;
+    background-color: #ffffff;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 13px;
+      height: 202px;
+      background-color: #00866b;
+      left: -13px;
+    }
+  }
+
+  &__image {
+    flex: 0 0 50%;
+    transform: translateX(-100%);
+  }
+
+  &__img {
+    width: 100%;
+    min-height: 100%;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-family: $Bold;
+    max-width: 650px;
+    margin-bottom: 30px;
+    @extend %text-wrap5;
+  }
+
+  &__text {
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    @extend %text-wrap5;
+    -webkit-line-clamp: 7;
+  }
+}
+
+.news {
+  padding: 80px 0 70px;
+  background-color: #fafafa;
+  background-image: url(../images/news-background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &__items {
+    position: relative;
+  }
+
+  &__item {
+    width: 100%;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  &__image {
+    margin-bottom: 15px;
+    max-height: 293px;
+    overflow: hidden;
+  }
+
+  &__img {
+    min-height: 293px;
+    width: 100%;
+  }
+
+  &__date {
+    font-size: 14px;
+    color: #999999;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-family: $Bold;
+    line-height: 25px;
+    -webkit-line-clamp: 4;
+  }
+}
+
+.connect {
+  padding: 75px 0 120px;
+
+  &__title {
+    font-size: 50px;
+    font-family: $Bold;
+    margin-bottom: 60px;
+  }
+}
+
+.form {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+  }
+
+  &-inputs {
+    width: 100%;
+    padding-top: 5px;
+  }
+
+  &__btn {
+    padding: 20px 115px;
+    background-color: #00866b;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 35px;
+    border: none;
+  }
+
+  &-btn {
+    display: flex;
+    flex-direction: column;
+    max-width: 23%;
+
+    & span {
+      color: #c9c9c9;
+      font-size: 12px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__box label {
+    width: 100%;
+    margin-right: 15px;
+  }
+
+  &__label {
+    width: 50% !important;
+  }
+
+  &__input {
+    width: 100%;
+    max-width: 310px;
+    border: none;
+    border-bottom: 1px solid #c9c9c9;
+    outline: none;
+    padding: 5px 10px 20px 5px;
+    color: #484d58;
+
+    &-img {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    &-text {
+      color: #484d58;
+    }
+
+    &--name {
+      max-width: 100%;
+    }
+
+    &--org {
+      max-width: 100%;
+    }
+  }
+}
+
+#message {
+  max-width: none;
+  min-width: 650px;
+}
+
+#file-label {
+  text-align: end;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+#file {
+  margin-right: 25px;
+  border: none;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  max-width: 300px;
+}

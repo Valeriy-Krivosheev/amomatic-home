@@ -1,0 +1,7 @@
+.news {
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px 30px;
+  }
+}

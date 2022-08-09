@@ -1,0 +1,213 @@
+@import "reset";
+@import "global";
+@import "slider-settings";
+@import "home";
+
+.header {
+  background-image: url(../images/Header-background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  color: #ffffff;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  &__content {
+    flex-grow: 1;
+  }
+  &__inner {
+    border-left: 1px solid #758294;
+    border-right: 1px solid #758294;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  &__title {
+    font-size: 80px;
+    font-family: $Bold;
+    margin-bottom: 70px;
+    overflow: hidden;
+  }
+  &__item {
+    max-width: 900px;
+    margin-bottom: 190px;
+  }
+  &__subtitle {
+    font-size: 25px;
+    font-weight: 400;
+    display: inline-block;
+    margin-left: 78px;
+    position: relative;
+    font-family: $Light;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 4px;
+      background-color: #ffffff;
+      top: 50%;
+      left: -80px;
+    }
+  }
+  &__arrows {
+    position: absolute;
+    width: 12%;
+    left: 8%;
+    bottom: 15%;
+    max-width: 160px;
+  }
+}
+
+.nav {
+  border-bottom: 1px solid #758294;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 42px 0 42px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    margin-right: 25px;
+  }
+  &__link {
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 0.9px;
+  }
+  &__btn {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 15px 35px;
+    margin-right: 5px;
+    &-media {
+      display: none;
+    }
+  }
+  &-menu {
+    display: none;
+  }
+  &__search {
+    margin-right: 65px;
+  }
+}
+
+.footer {
+  padding: 55px 30px;
+  color: #ffffff;
+  background-color: #484d58;
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #373c46;
+    &__box {
+      display: flex;
+      width: 50%;
+      justify-content: space-between;
+      &:not(:last-child) {
+        margin-right: 90px;
+      }
+    }
+    &__item {
+      max-width: 220px;
+      &:last-child {
+        max-width: 350px;
+      }
+    }
+    &__list {
+      &--last {
+        margin-bottom: 70px;
+      }
+    }
+    &__title {
+      font-family: "AcherusFeral-Bold";
+      font-size: 18px;
+      margin-bottom: 16px;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+    &__logo {
+      margin-bottom: 50px;
+      display: inline-block;
+    }
+    &__phone {
+      font-size: 18px;
+      font-weight: 750;
+      margin-bottom: 40px;
+      & span {
+        font-size: 12px;
+        display: block;
+        margin-top: 10px;
+        font-weight: 400;
+      }
+    }
+    &__text {
+      margin-bottom: 12px;
+      & a {
+        color: #ffffff;
+        font-size: 16px;
+      }
+    }
+    &__btn {
+      background-color: transparent;
+      color: #ffffff;
+      cursor: pointer;
+      padding: 20px 90px;
+      border: 1px solid #aaacb1;
+    }
+  }
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    &__title {
+      font-size: 13px;
+    }
+    &__link {
+      position: relative;
+      & a {
+        color: #ffffff;
+        font-size: 13px;
+        display: inline-block;
+        text-decoration: underline;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/footer-img.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        left: -10%;
+        bottom: -10%;
+      }
+    }
+  }
+}
+
+@import "factories";
+@import "contacts";
+@import "upgrade";
+@import "modules";
+@import "drums";
+@import "burners";
+@import "amomatic160sm";
+@import "techno";
+@import "service";
+@import "news";
+@import "404";
+@import "search";
+@import "modern";
+@import "newItem";
+@import "media";
+@import "popup";

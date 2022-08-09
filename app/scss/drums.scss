@@ -1,0 +1,152 @@
+.header {
+  &-drums {
+    min-height: auto;
+    background-image: url(../images/drums-header-bg.png);
+  }
+}
+.economical {
+  padding: 70px 0 65px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__item {
+    width: 50%;
+  }
+  &__image {
+    margin-top: -20px;
+    width: 95%;
+  }
+  &__title {
+   font-family: AcherusFeral-Bold;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    line-height: 25px;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+}
+.construction {
+  background-color: #f7f7f7;
+  display: flex;
+  &__content {
+    display: flex;
+    flex: 0 0 100%;
+    align-items: center;
+    padding: 30px 0 30px;
+  }
+  &__item {
+    width: 50%;
+  }
+  &__image {
+    flex: 0 0 48%;
+    transform: translateX(-100%);
+  }
+  &__img {
+    min-height: 100%;
+    width: 100%;
+  }
+  &__title {
+    font-size: 50px;
+    font-family: $Bold;
+    margin-bottom: 30px;
+  }
+  &__text {
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    @extend %text-wrap5;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+}
+.accordion {
+  padding: 60px 0 75px;
+  &__items {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 5px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 15px;
+      height: 15px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/accordion-arrow.png);
+      top: 15px;
+      right: 15px;
+      transform: rotate(180deg);
+      transition: all 0.3s;
+    }
+  }
+  &__items.active .accordion__box {
+   height: auto;
+   padding-right: 15px;
+   opacity: 1;
+   visibility: visible;
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+  &__items.active::after {
+    transform: rotate(0);
+  }
+  &__name {
+    background-color: #30895c;
+  }
+  &__title {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "AcherusFeral-Bold";
+    max-width: 90%;
+    padding: 15px 0 15px 30px;
+    text-transform: uppercase;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
+
+    &:nth-child(even) {
+      background-color: #f3f3f3;
+    }
+    &:last-child {
+      border-bottom: 1px solid #ebebeb;
+    }
+  }
+  &__text {
+    padding: 10px 0 10px 30px;
+    color: #2d2d2d;
+  }
+}
+.drums {
+  background-color: #f7f7f7;
+  &__title {
+    font-size: 50px;
+    line-height: 55px;
+  }
+  &__image {
+    width: 90%;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__text {
+    @extend %text-wrap5;
+    -webkit-line-clamp: 5;
+  }
+  &-pagination {
+    bottom: -10%;
+  }
+}

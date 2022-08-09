@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amomatic | Сушильные барабаны</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <svg display="none" xmlns="http://www.w3.org/2000/svg">
+  
+    <symbol id="phone" viewBox="0 0 20 20">
+      <path
+        d="M13.0406 16.5063C7.38544 15.0666 2.93352 10.6147 1.49383 4.95952C0.948815 2.81867 2.79098 0.999999 5.00012 0.999999L6.00012 1C6.55241 1 6.99486 1.44883 7.04934 1.99842C7.14138 2.92696 7.36044 3.81815 7.68889 4.65437L6.16961 6.17366C7.35213 8.6447 9.35542 10.648 11.8265 11.8305L13.3457 10.3112C14.182 10.6397 15.0732 10.8587 16.0017 10.9508C16.5513 11.0053 17.0001 11.4477 17.0001 12L17.0001 13C17.0001 15.2091 15.1815 17.0513 13.0406 16.5063Z"
+        stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" fill="#ffffff" />
+    </symbol>
+  
+    <symbol id="find" viewBox="0 0 20 20">
+      <path
+        d="M11.15 11.06L14.075 14.025L16 15.95M11.1931 2.58187C13.525 4.91369 13.525 8.69432 11.1931 11.0261C8.86132 13.358 5.08069 13.358 2.74887 11.0261C0.417045 8.69432 0.417045 4.91369 2.74887 2.58187C5.08069 0.250053 8.86132 0.250053 11.1931 2.58187Z"
+        stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="transparent" />
+    </symbol>
+  
+    <symbol id="menu" viewBox="0 0 20 20">
+      <path d="M3.5 4.99973H14.5027M5.5 9.0014H14.5027M1.49731 0.998047H14.5024" stroke="#ffffff" stroke-width="1.5"
+        stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+  
+    <symbol id="close" viewBox="0 0 20 20">
+      <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+        d="M9.788,7.985 L15.449,13.645 C15.884,14.80 15.884,14.786 15.449,15.221 C15.14,15.656 14.308,15.656 13.873,15.221 L8.212,9.560 L2.552,15.221 C2.117,15.656 1.411,15.656 0.976,15.221 C0.541,14.786 0.541,14.80 0.976,13.645 L6.637,7.985 L0.976,2.324 C0.541,1.889 0.541,1.183 0.976,0.748 C1.411,0.313 2.117,0.313 2.552,0.748 L8.212,6.409 L13.873,0.748 C14.308,0.313 15.14,0.313 15.449,0.748 C15.884,1.183 15.884,1.889 15.449,2.324 L9.788,7.985 Z" />
+    </symbol>
+  </svg>
+  <!-- POPUP -->
+<div class="popup__bg"> 
+  <form class="popup">
+    <h3 class="connect__title popup__title">Обратный звонок</h3>
+    <div class="form__inner popup__inner">
+      <div class="form__item form-inputs">
+        <div class="form__items popup__items">
+          <div class="form__box">
+            <label for="name">
+              <input class="form__input" type="text" id="name" placeholder="Имя*" required>
+            </label>
+            <label for="tel">
+              <input class="form__input" type="tel" id="tel" placeholder="Телефон*" required>
+            </label>
+          </div>
+          <div class="form__box">
+            <label for="email">
+              <input class="form__input popup__input--mail" type="email" placeholder="E-mail" id="email">
+            </label>
+          </div>
+          <div class="form__box">
+            <label for="message">
+              <input class="form__input popup__message" type="text" id="message" placeholder="Сообщение">
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form__item form-btn popup__button">
+        <button class="form__btn popup__btn" type="submit">Отправить</button>
+      </div>
+    </div>
+  </form>
+</div>  
+
+<!-- POPUP -->
+<header class="header header-drums">
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+          <img src="./images/logo.png" alt="логотип">
+        </a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">О компании</a>
+          </li>
+          <li class="nav__item">
+            <a href="factories.html" class="nav__link">Заводы</a>
+          </li>
+          <li class="nav__item">
+            <a href="modules.html" class="nav__link">Оборудование</a>
+          </li>
+          <li class="nav__item">
+            <a href="upgrade.html" class="nav__link">Модернизация АБЗ</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Запчасти и сервис</a>
+          </li>
+          <li class="nav__item">
+            <a href="news.html" class="nav__link">Новости</a>
+          </li>
+          <li class="nav__item">
+            <a href="contacts.html" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="burger__item">
+            <button class="burger__close">
+              <svg width="25" height="25">
+                <use xlink:href="#close"></use>
+              </svg>
+            </button>
+            <div class="burger__phone">
+              8-800-700-2122
+              <span>Информационный центр</span>
+            </div>
+            <div class="burger__phone">
+              + 7(495)212-2122
+              <span>Офис продаж</span>
+            </div>
+            <u class="burger__mail">info@e-np.ru</u>
+          </div>
+          <div class="burger__items">
+            <div class="burger__name">
+              <p class="burger__title">Компания</p>
+            </div>
+            <div class="burger__content">
+              <a href="#" class="burger__link">Сертификаты</a>
+              <a href="#" class="burger__link">О нас</a>
+              <a href="#" class="burger__link">Другое</a>
+            </div>
+          </div>
+          <div class="burger__items">
+            <div class="burger__name">
+              <p class="burger__title">Заводы</p>
+            </div>
+            <div class="burger__content">
+              <a href="#" class="burger__link">Контейнерные серии см</a>
+              <a href="#" class="burger__link">Полумобильные серии м</a>
+              <a href="#" class="burger__link">Мобильные серии см</a>
+              <a href="#" class="burger__link">Башенные серии н</a>
+            </div>
+          </div>
+          <div class="burger__items">
+            <div class="burger__name">
+              <p class="burger__title">Оборудование</p>
+            </div>
+            <div class="burger__content">
+              <a href="#" class="burger__link">Горелки</a>
+              <a href="#" class="burger__link">Сушильные барабаны</a>
+              <a href="#" class="burger__link">Смесительные башни</a>
+              <a href="#" class="burger__link">Бункеры накопители</a>
+              <a href="#" class="burger__link">Ресайклинг асфальта</a>
+            </div>
+          </div>
+          <button class="nav__btn burger__btn open">
+            Обратная связь
+          </button>
+        </div>
+        <button class="nav-menu">
+          <svg width="35" height="30">
+            <use xlink:href="#menu"></use>
+          </svg>
+        </button>
+        <button class="nav__btn open">
+          Обратный звонок
+        </button>
+        <button class="nav__btn-media open">
+          <svg width="20" height="20">
+            <use xlink:href="#phone"></use>
+          </svg>
+        </button>
+        <a href="search.html" class="nav__search">
+          <svg width="20" height="20">
+            <use xlink:href="#find"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="header__content">
+    <div class="container">
+      <div class="header__inner header-upgrade__inner">
+        <div class="container__small">
+          <h1 class="header__title header-contacts__title">Сушильные барабаны</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <section class="economical">
+    <div class="container__small">
+      <div class="economical__inner">
+        <div class="economical__item">
+          <div class="economical__image">
+            <img src="./images/economical-img.png" alt="фото барабана" class="economical__img">
+          </div>
+        </div>
+        <div class="economical__item">
+          <h3 class="economical__title">
+            Экономичность эксплуатации была
+            положена в основу при проектировании
+            сушильных барабанов Амоматик.
+          </h3>
+          <p class="economical__text">
+            Оптимальные размеры барабана и горелки являются определяющими факторами. Применяемые Амоматик горелки
+            гарантируют и
+            демонстрируют высочайшее качество при работе на дизтопливе, мазуте или природном газе.
+          </p>
+          <p class="economical__text">
+            Скорость вращения барабана регулируется частотным преобразователем, обеспечивающим работу с различными
+            исходными
+            материалами и в разных погодных условиях.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="construction">
+    <div class="construction__content">
+      <div class="container__small">
+        <div class="construction__box">
+          <div class="construction__item">
+            <h3 class="construction__title">
+              Конструкция
+            </h3>
+            <p class="construction__text">
+              Сушильные барабаны изготовлены из огнеупорной стали и укрыты термоизоляционным материалом. Резиновое и
+              лабиринтное
+              уплотнение на торцах барабана обеспечивает оптимальное разряжение внутри барабана.
+            </p>
+            <p class="construction__text">
+              Все лопасти внутри барабана крепятся на болтах для их лёгкой замены.
+              Барабан оборудован встроенной камерой крупной пыли.
+              При этом дополнительный сепаратор или транспортёр крупной пыли не требуются.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="construction__image">
+      <img src="./images/construction-img.png" alt="фото контрукция" class="construction__img">
+    </div>
+  </section>
+
+  <section class="accordion">
+    <div class="container__small">
+      <div class="accordion__inner">
+        <div class="accordion__items">
+          <div class="accordion__name">
+            <h4 class="accordion__title">
+              Основная информация по сушильным барабанам заводов Amomatic
+            </h4>
+          </div>
+
+          <div class="accordion__content">
+            <div class="accordion__box">
+              <p class="accordion__text">
+                Размеры барабана
+              </p>
+              <p class="accordion__text">
+                2250/8500 мм, 2350/9000 мм, 2500/9000 мм, 2800/10000 мм
+              </p>
+            </div>
+            <div class="accordion__box">
+              <p class="accordion__text">
+                Мощность горелки
+              </p>
+              <p class="accordion__text">
+                12.4 мВт, 15.5 мВт, 18.4 мВт, 22.5 мВт
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="accordion__items">
+          <div class="accordion__name">
+            <h4 class="accordion__title">Производительнось</h4>
+          </div>
+
+          <div class="accordion__content">
+            <div class="accordion__box">
+              <p class="accordion__text">Увеличение температуры материала</p>
+              <p class="accordion__text">t 150°C</p>
+            </div>
+            <div class="accordion__box">
+              <p class="accordion__text">Плотность материала</p>
+              <p class="accordion__text">1.6 т/м3</p>
+            </div>
+            <div class="accordion__box">
+              <p class="accordion__text">Влажность материала</p>
+              <p class="accordion__text">5%</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="accordion__items">
+          <div class="accordion__name">
+            <h4 class="accordion__title">Техническая спецификация</h4>
+          </div>
+
+          <div class="accordion__content">
+            <div class="accordion__box">
+              <p class="accordion__text">Материал кожуха барабана</p>
+              <p class="accordion__text">термостойкая сталь</p>
+            </div>
+            <div class="accordion__box">
+              <p class="accordion__text">Толщина материала кожуха</p>
+              <p class="accordion__text">10 мм</p>
+            </div>
+            <div class="accordion__box">
+              <p class="accordion__text">Толщина материала кожуха
+                Термоизоляция материала кожуха</p>
+              <p class="accordion__text">50 мм</p>
+            </div>
+            <div class="accordion__box">
+              <p class="accordion__text">Ролики барабана</p>
+              <p class="accordion__text">4 шт диаметром 470 мм</p>
+            </div>
+            <div class="accordion__box">
+              <p class="accordion__text">Мощность моторов</p>
+              <p class="accordion__text">4 x15 кВт, 4 x 18.5 кВт, 4 x 22.5 кВт</p>
+            </div>
+            <div class="accordion__box">
+              <p class="accordion__text">Скорость вращения барабана</p>
+              <p class="accordion__text">регулируется инвертором</p>
+            </div>
+            <div class="accordion__box">
+              <p class="accordion__text">Наклон барабана</p>
+              <p class="accordion__text">4 град</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="economical drums">
+    <div class="container__small">
+      <div class="economical__inner">
+        <div class="economical__item">
+          <div class="economical__image drums__image">
+            <img src="./images/drums.png" alt="фото барабана" class="economical__img drums__img">
+          </div>
+        </div>
+        <div class="economical__item">
+          <h3 class="economical__title drums__title">
+            Конструкция сушильных барабанов заводов ДС 1600 и ДС 3000
+          </h3>
+          <p class="economical__text drums__text">
+            Тепловая экономичность сушильного барабана достигается путем оптимизации скорости его вращения (частотные
+            преобразователи) в зависимости от заданной температуры каменного материала и желаемой производительности. В
+            зоне пламени
+            барабан оборудован специальными пластинами, которые защищают обшивку, и в то же время проводят тепловое
+            излучение в
+            каменный материал.
+          </p>
+          <p class="economical__text">
+            Подъемные лопатки сконструированы и размещены таким образом, что износ барабана минимизируется. К тому же,
+            внутренняя
+            поверхность барабана защищена специальными пластинами для уменьшения износа, вызванного каменным материалом.
+            Термопара
+            для измерения температуры каменного материала имеет специальную защиту для увеличения срока службы.
+            Быстродействующая
+            термопара нечувствительна к воздействию пыли.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modules">
+    <div class="container__small">
+      <div class="modules__top">
+        <h3 class="modules__title">Модули и технологии</h3>
+        <div class="modules-arrows dekstop">
+          <div class="modules-button-prev"></div>
+          <div class="modules-button-next"></div>
+        </div>
+      </div>
+      <div class="modules__inner">
+        <div class="swiper-container slider-modules">
+          <div class="image-slider__wrapper swiper-wrapper">
+            <div class="image-slider__slide swiper-slide">
+              <div class="modules__item">
+                <div class="modules__image">
+                  <img class="modules__img" src="./images/modules1.png" alt="Фото слайдер">
+                </div>
+                <div class="modules__content">
+                  <h4 class="modules__name">горелки</h4>
+                  <p class="modules__text">Наши экономичные горелки - надёжный выбор для любого производителя.
+                  </p>
+                  <a class="modules__arrow" href="#">
+                    <img src="./images/modules-arrow.png" alt="Перейти">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="modules__item">
+                <div class="modules__image">
+                  <img class="modules__img" src="./images/modules2.png" alt="Фото слайдер">
+                </div>
+                <div class="modules__content">
+                  <h4 class="modules__name">сушильные барабаны</h4>
+                  <p class="modules__text">Экономичная работа - ключевая особенность сушильных барабанов Amomatic.
+                  </p>
+                  <a class="modules__arrow" href="#">
+                    <img src="./images/modules-arrow.png" alt="Перейти">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="modules__item">
+                <div class="modules__image">
+                  <img class="modules__img" src="./images/modules3.png" alt="Фото слайдер">
+                </div>
+                <div class="modules__content">
+                  <h4 class="modules__name">смесительные башни</h4>
+                  <p class="modules__text">Стандартная линейка смесительных башен имеет производительность от 120 т.ч.
+                  </p>
+                  <a class="modules__arrow" href="#">
+                    <img src="./images/modules-arrow.png" alt="Перейти">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="modules__item">
+                <div class="modules__image">
+                  <img class="modules__img" src="./images/modules4.png" alt="Фото слайдер">
+                </div>
+                <div class="modules__content">
+                  <h4 class="modules__name">бункеры накопители</h4>
+                  <p class="modules__text">Конструкция бункеров накопителей позволяет эффективно поддерживать
+                    температуру
+                    асфальта.
+                  </p>
+                  <a class="modules__arrow" href="#">
+                    <img src="./images/modules-arrow.png" alt="Перейти">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="modules__item">
+                <div class="modules__image">
+                  <img class="modules__img" src="./images/modules5.png" alt="Фото слайдер">
+                </div>
+                <div class="modules__content">
+                  <h4 class="modules__name">ресайклинг асфальта</h4>
+                  <p class="modules__text">Наши системы легко транспортируются и могут быть легко интегрированы в уже
+                    существующие заводы.
+                  </p>
+                  <a class="modules__arrow" href="#">
+                    <img src="./images/modules-arrow.png" alt="Перейти">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="factories-pagination drums-pagination"></div>
+        <div class="modules-arrows phone">
+          <div class="modules-button-prev"></div>
+          <div class="modules-button-next"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="connect">
+    <div class="container__small">
+      <h3 class="connect__title">Написать нам</h3>
+      <form class="form">
+        <div class="form__inner">
+          <div class="form__item form-inputs">
+            <div class="form__items">
+              <div class="form__box">
+                <label for="name">
+                  <input class="form__input" type="text" id="name" placeholder="Имя*" required>
+                </label>
+                <label for="tel">
+                  <input class="form__input" type="tel" id="tel" placeholder="Телефон*" required>
+                </label>
+                <label for="email">
+                  <input class="form__input" type="email" placeholder="E-mail">
+                </label>
+              </div>
+              <div class="form__box">
+                <label for="message">
+                  <input class="form__input" type="text" id="message" placeholder="Сообщение">
+                </label>
+                <label for="file" id="file-label">
+                  <input class="form__input" type="file" id="file">
+                  <span class="form__input-img">
+                    <img src="./images/form-file.png" alt="Прикрепить">
+                  </span>
+                  <span class="form__input-text">Прикрепите файл</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form__item form-btn">
+            <button class="form__btn" type="submit">Отправить</button>
+            <span>
+              Нажимая кнопку отправить, Вы соглашаетесь на<u>
+                обработку персональных данных
+              </u>
+            </span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+    <div class="container__small">
+      <div class="footer-top">
+        <div class="footer-top__box">
+          <div class="footer-top__item">
+            <a href="#" class="footer-top__logo">
+              <img src="./images/logo.png" alt="логотип">
+            </a>
+            <div class="footer-top__phone">
+              8-800-700-2122
+              <span>Информационный центр</span>
+            </div>
+            <div class="footer-top__phone">
+              + 7 (495) 212-2122
+              <span>Офис продаж</span>
+            </div>
+            <u>
+              info@cominvest-akmt.ru
+            </u>
+          </div>
+          <div class="footer-top__item">
+            <h4 class="footer-top__title">компания</h4>
+            <ul class="footer-top__list">
+              <li class="footer-top__text">
+                <a href="#">О компании</a>
+              </li>
+              <li class="footer-top__text">
+                <a href="upgrade.html">Модернизация АБЗ</a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Запчасти и сервис
+                </a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Новости
+                </a>
+              </li>
+              <li class="footer-top__text">
+                <a href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-top__box">
+          <div class="footer-top__item">
+            <h4 class="footer-top__title">оборудование</h4>
+            <ul class="footer-top__list">
+              <li class="footer-top__text">
+                <a href="burners.html">Горелки</a>
+              </li>
+              <li class="footer-top__text">
+                <a href="drums.html">Сушильные барабаны
+                </a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Рукавные фильтры
+                </a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Питатели
+                </a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Смесительные башни</a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Бункера накопители
+                </a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Ресайклинг асфальта</a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Пенобитум</a>
+              </li>
+              <li class="footer-top__text">
+                <a href="techno.html">IT решения
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-top__item no-border">
+            <h4 class="footer-top__title">заводы</h4>
+            <ul class="footer-top__list footer-top__list--last">
+              <li class="footer-top__text">
+                <a href="#">Контейнерные</a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Полумобильные</a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Мобильные
+                </a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Стационарные
+                </a>
+              </li>
+              <li class="footer-top__text">
+                <a href="#">Спецификация под заказ</a>
+              </li>
+            </ul>
+            <button class="footer-top__btn open">Обратная связь</button>
+          </div>
+        </div>
+  
+  
+  
+      </div>
+      <div class="footer-bottom">
+        <h6 class="footer-bottom__title">АО «Коминвест-АКМТ</h6>
+        <div class="footer-bottom__link">
+          <a href="#">Дизайн и разработка - агентство «Скилпоинт»</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="./js/drums/drums.js"></script>
+
+</body>
+
+</html>

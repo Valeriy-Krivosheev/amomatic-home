@@ -1,0 +1,13 @@
+.photo {
+  &__big {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 20px;
+    margin-bottom: 25px;
+  }
+  &__small{
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 20px;
+  }
+}
